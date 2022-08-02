@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+header{
+    height: 400px;
+    background-color: aqua;
+    clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    0 69%);
+}
+
+main{
+    background-color: chocolate;
+}
+
+footer{
+    background-color: yellow;
+}
