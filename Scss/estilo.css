@@ -13,7 +13,7 @@
 
 body{
     background-image: url('../fotos/huellas.png');
-    z-index: 0;
+
 }
 
 /* header */
@@ -43,32 +43,39 @@ header{
     height: 400px;
     text-align: center;
     opacity: 0.8;
-    z-index: 0;
+    z-index: 1;
+
 }
 
 nav{
     grid-area: nav;
     background-color: #507445;
+    align-self: end;
+    justify-content: center;
     height: 100px;
-    align-items: center;
+
+    text-align: center;
+
 
 
 } 
 
 .navList{
-    display: flex;
+display: flex;
     flex-direction: row;
+    justify-items: end;
     justify-content: space-around;
     list-style-type: none;
-    height: auto;
-    }
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
 
 .navList li a{
     text-decoration: none;
     color: white;
 
-
-}
+} 
 
 main{
     grid-area: main;
@@ -77,5 +84,5 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: yellow;
+    background-color: #ffde59;
 }
