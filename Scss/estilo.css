@@ -1,6 +1,8 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 25px;
 }
 
 .gridBody{
@@ -9,11 +11,11 @@
     grid-template-rows: auto auto auto;
     grid-template-areas: "header"
     "main"
-    "footer"; }
+    "footer"; 
+}
 
 body{
     background-image: url('../fotos/huellas.png');
-
 }
 
 /* header */
@@ -28,37 +30,40 @@ body{
 
 header{
     grid-area: header;
-    height: auto;
-    /* background-color: aqua;
-    clip-path: polygon(0 0,
-    100% 0,
-    100% 100%,
-    0 69%); */
+    height: 500px;
+
+
 
 }
 
 #logo{
     grid-area: logo;
+    padding: 50px;
     justify-content: center;
-    height: 400px;
     text-align: center;
     opacity: 0.8;
     z-index: 1;
-
 }
+
+
 
 nav{
     grid-area: nav;
     background-color: #507445;
+    /* clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    0 69%);  */
     align-self: end;
     justify-content: center;
-    height: 100px;
-
-    text-align: center;
-
-
+    /* height: 100px; */
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    border-top-left-radius: 50% 20%;
 
 } 
+
 
 .navList{
 display: flex;
@@ -74,8 +79,11 @@ display: flex;
 .navList li a{
     text-decoration: none;
     color: white;
-
 } 
+
+.navList li a:hover{
+    color: #ffde59;
+}
 
 main{
     grid-area: main;
