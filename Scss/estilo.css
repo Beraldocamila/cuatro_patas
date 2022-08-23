@@ -15,113 +15,269 @@
 }
 
 body{
-    background-image: url('../fotos/huellas.png');
+    background-image: url('../fotos/huellas1.png');
     z-index: 0;
 }
 
 /* header */
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
 .gridHeader{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: auto auto;
-    grid-template-areas: "logo"
-                        "nav";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 
 header{
     grid-area: header;
-
+    height: 300px;
 }
 
 #logo{
-    grid-area: logo;
-    padding: 50px;
-    justify-content: center;
-    text-align: center;
-    opacity: 0.8;
+
     z-index: 1;
+    position: absolute;
+    left: 200px;
 }
 
+.navIndex{
+    margin-top: 20px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 50%;
 
-
-nav{
-    grid-area: nav;
-    background-color: #507445;
-    /* clip-path: polygon(0 0,
-    100% 0,
-    100% 100%,
-    0 69%);  */
-    align-self: end;
-    justify-content: center;
-
-} 
+}
 
 
 .navList{
     display: flex;
     flex-direction: row;
-    justify-items: end;
     justify-content: space-around;
     list-style-type: none;
-    height: 100px;
-    text-align: center;
+    z-index: 3;
     align-items: center;
-    z-index: 1;
 }
 
 .navList li a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 } 
 
 .navList li a:hover{
     color: #ffde59;
 }
 
+/* Index */
+
 main{
     grid-area: main;
     position: relative;
+    height: auto;
 
+}
+.carousel-inner{
+    display: flex;
+    padding-left: 400px;
+    padding-bottom: 50px;
+}
 
+#carouselExampleDark{
+    padding-top: 50px;
+}
+
+.Title-plan-es{
+    padding-top: 60px;
+    padding-left: 60px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.Title-plan-ag{
+    padding-top: 60px;
+    padding-left: 80px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.Title-plan-az{
+    padding-top: 60px;
+    padding-left: 60px;
+    position: absolute;
+    font-size: xx-large;
+    color: white;
 }
 
 .imagenIndex{
     height: 500px;
-    background-image: url('../fotos/perro_.jpg');
+    background-image: url('../fotos/3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 0.9;
     z-index: 1;
+    padding-left: 30px;
+}
+.club{
+    color: white;
+    padding: 200px 0 10px 0;
+    font-family:'Didact Gothic', sans-serif;
+}
+.buttonBeneficios{
+    font-family:'Didact Gothic', sans-serif;
+    background-color: rgba(255, 255, 255, 0.481);
+    font-size: 15px;
+    color: black;
+    width: 160px;
+    border-style: inset;
+    padding: 0 10px 0 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.buttonBeneficios:hover{
+    background-color:  rgba(158, 158, 158, 0.481);
 }
 
-.tituloUno{
-color:black;
-text-align: center;
-text-decoration: overline;
-font-size: 50px;
-padding-top: 4em;
-font-weight: lighter;
 
+.tituloUno{
+    font-size: 60px;
+    margin-top: 50px;
+    font-weight: lighter;
+    text-decoration: overline;
 }
 
 .tituloDos{
-    font-size: 50px;
-    color:black;
-    text-align: center;
-text-decoration: underline;
-letter-spacing: 20px;
-font-weight: lighter;
+    font-size: 70px;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
 
+.titulos_index{
+
+    text-align: center;
+    color: #354d2e;
 
 }
+
+.subtituloIndex{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+
+    color: #354d2e;
+    margin: 0 35% 20px 35%;
+}
+
+/*section*/
+
+section{
+    grid-area: main;
+    position: relative;
+    height: 800px;
+}
+
+.imagenAndText{
+    grid-area: main;
+    margin-top: 50px;
+
+}
+
+.sectionImg{
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.777);
+}
+
+.divSection{
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    z-index: 2;
+}
+
+.textSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.tituloSection{
+
+    font-size: 40px;
+    background-color: #b6d5eb;
+    padding: 20px;
+    font-style:oblique;
+}
+
+.textNoso{
+    padding: 0px 20px 50px 20px;
+    font-size: 20px;
+    background-color: #b6d5ebc4;
+}
+.textNoso div {
+    margin-top: 30px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.containerButton{
+    margin-top: 10px;
+}
+.buttonIndex{
+    font-size: 20px;
+    font-family:'Didact Gothic', sans-serif;
+    padding: 0 10px 0 10px;
+    border-style: outset;
+    background-color: #678092;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.buttonIndex:hover{
+    background-color: #4d6372
+}
+/* FOOTER */
+
 
 footer{
     grid-area: footer;
     background-color: #ffde59;
-    height: 100px;
+    height: auto;
 }
 .footer{
     height: 100px;
@@ -132,10 +288,12 @@ footer{
     font-size: 20px;
     list-style-type: none;
     margin: 0 50px;
+    
+
 }
 
 .social{
-    height: 100px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -143,6 +301,74 @@ footer{
 
 
 /* HEADER RESTO PAGINAS */
+.headerDif{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #507445;
+    padding: 20px 0 20px 0;
+
+}
+
+.titulosDif{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    height: auto;
+}
+.titulosDif a{
+    text-decoration: none;
+    color: white;
+}
+.tituloUnoDif{
+    font-weight: lighter;
+
+
+}
+
+.tituloDosDif{
+    letter-spacing: 20px;
+    font-weight: lighter;
+    padding-left: 20px;
+}
+.logoDif{
+    width: 350px;
+    height: 250px;
+}
+.navDif{
+    width: 45%;
+    margin-right: 20px;
+    background-color: #5d8a4f;
+
+    align-self: center;
+}
+.navListDif{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    list-style-type: none;
+    height: 60px;
+    align-items: center;
+    z-index: 1;
+}
+
+.navListDif li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+text-align: right;
+}
+
+.fa-paw{
+    color: white;
+    font-size: 10px;
+}
+
+/* SECTION AMIGOS */
 .titulo_refugios{
     color: #507445;
     font-size: 80px;
@@ -151,8 +377,6 @@ footer{
     text-align: center;
     margin: 20px;
 }
-
-/* SECTION AMIGOS */
 
 .dif_refugios{
     display: flex;
@@ -163,47 +387,89 @@ footer{
 
 .refugios_contenedor{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 400px;
-    margin: 30px;
-    
+    height: 400px;
+    margin: 50px;
 }
 
-.refugios_contenedor figure{
+figure{
+    position: relative;
+}
+
+.nombre_refugio{
+    margin-bottom: 30px;
+    color: white; 
+
+    background-color:#507445 ;
+    border-top: 1px solid #507445; ;
+    border-bottom: 1px solid #507445; 
+}
+
+.card_front{
     position:relative;
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 400px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 15px 25px #507445;
 }
 
-.refugios_contenedor figure img{
+.card_back{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    font-size: 18px;
+    z-index: 1;
+}
+.card_back p{
+    font-family:'Didact Gothic', sans-serif;
+}
+
+.card_back i {
+    margin-right: 10px;
+}
+
+.refugios_contenedor figure .card_front img{
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
 }
 
-.refugios_contenedor figure .nombre_refugio{
+figure div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+}
+
+.refugios_contenedor figure .card_front{
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.refugios_contenedor figure .card_back {
+    transform: perspective(500px) rotateY(180deg);
+    background-color: #00c5cc3d;
+    box-shadow: 0px 15px 25px #00636693;
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background: #385130a3;
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-
-}
-.nombre_refugio h1{
-    margin: 100px 10px 0 10px;
-    color: #ffde59;
-    text-align: center;
+    border-radius: 10px;
 }
 
-.refugios_contenedor figure:hover > .nombre_refugio{
-    opacity: 1;
-    visibility: visible;
+.refugios_contenedor figure:hover .card_front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.refugios_contenedor figure:hover .card_back{
+    transform: perspective(500px) rotateY(360deg);
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
 }

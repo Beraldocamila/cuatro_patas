@@ -8,43 +8,120 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Glass+Antiqua&display=swap" rel="stylesheet">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/d1563267ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Cuatro Patas</title>
 </head>
 <body>
     <div class="gridBody">
         <header>
+            <div class="princContainer">
+                <div class="container">
+                    <svg viewBox="0 0 500 500" 
+                        preserveAspectRatio="xMinYMin meet"
+                        style="z-index: -1;">
+                        
+                        <path i d="M0, 50 C150, 150 200,
+                            0 500, 50 L500, 0 L0, 0 Z"
+                            style="stroke:none; 
+                            fill: #507445;">
+                        </path>
+                    </svg>
+                </div>
+                
+                <div class="container">
+                    <svg viewBox="100 0 400 200" 
+                        preserveAspectRatio="xMinYMin meet"
+                        style="z-index:-2;">
+                        
+                        <path d="M50, 60 C600, 50 200, 
+                            150 800, 0 L500, 00 L0, 0 Z"
+                            style="stroke: none; 
+                            fill:#ffde59b4;">
+                        </path>
+                    </svg>
+                </div>
+                
+                <div class="container">
+                    <svg viewBox="0 0 500 400" 
+                        preserveAspectRatio="xMinYMin meet"
+                        style="z-index:-2;">
+                        
+                        <path d="M0, 50 C50, 200 350,
+                            0 500, 100 L500, 00 L0, 0 Z"
+                            style="stroke: none; 
+                            fill:#ffde59b4;">
+                        </path>
+                    </svg>
+                </div>
+            </div>
             <div class="gridHeader">
                 <div id="logo">
-                    <a href="index.html"><img src="./fotos/logo_solo3.png" alt="logo_solo" width="400" height="300"></a>
-
+                    <a href="index.html"><img src="./fotos/logo_solo5.png" alt="logo_solo" width="250" height="250"></a>
                 </div>
-
-                <nav>
-                    
+                <nav class="navIndex">
                     <ul class="navList">
-                        <li><a href="./html/quienes_somos.html">Quienes Somos</a></li>
-                        <li><a href="./html/planes.html">Nuestros Planes</a></li>
-                        <li><a href="./html/cartilla.html">Cartilla</a></li>
-                        <li><a href="./html/amigos.html">Nuestros Amigos</a></li>
-                        <li><a href="./html/contacto.html">Contacto</a></li>
+                        <!-- <li><a href="./html/quienes_somos.html">Quienes Somos</a></li>
+                        <li><i class="fa-solid fa-paw"></i></li> -->
+                        <li><a href="./html/planes.html">PLANES</a></li>
+                        <li><i class="fa-solid fa-paw"></i></li>
+                        <!-- <li><a href="./html/cartilla.html">Cartilla</a></li>
+                        <li><i class="fa-solid fa-paw"></i></li> -->
+                        <li><a href="./html/amigos.html">NUESTROS AMIGOS</a></li>
+                        <li><i class="fa-solid fa-paw"></i></li>
+                        <li><a href="./html/contacto.html">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <div class="imagenIndex">
-                <h1 class="tituloUno">Cuatro Patas</h1>
-                <h1 class="tituloDos">SALUD</h1>
+            
+            <div class="titulos_index">
+                <div >
+                    <h1 class="tituloUno">Cuatro Patas</h1>
+                    <h1 class="tituloDos">SALUD</h1>
+                </div>
+                <div class="animate__animated animate__zoomIn">
+                <h1 class="subtituloIndex">OBRA SOCIAL PARA MASCOTAS</h1>
             </div>
+            </div>
+            <div class="imagenIndex">
+                <h1 class="club">SE PARTE DEL CLUB</h1>
+                <div class="buttonBeneficios">NUESTROS BENEFICIOS</div>
+            </div>
+            <section class="imagenAndText">
+                <div class="divSection">
+                    <img class="sectionImg" src="./fotos/5.png" width="250px" height="500px">
+                    <div class="textSection">
+                        <h1 class="tituloSection" >| ¿ Por qué 4 patas SALUD ? |</h1>
+                        <div class="textNoso">
+                            
+                            <div>Sabemos lo importante que es tu mascota para vos, por esa razón queremos ayudarte a cuidarla, brindándote un servicio integral para acompañarlos en cada etapa de su vida.</div>
+                            <div>Contamos con un equipo de profesionales que busca mejorar su calidad de vida.</div>
+                            <div>En Cuatro Patas Salud podes acceder de manera ágil y rápida a la cobertura que se adecue a tus necesidades. </div>
+                            <div>Vos lo mimas y nosotros los cuidamos.</div>                         
+                        </div>
+                        <div class="containerButton"><a href="./html/planes.html" class="buttonIndex"> NUESTROS PLANES </a> </div>
+
+                    </div>
+                    <img class="sectionImg" src="./fotos/6.png" width="250px" height="500px">
+
+                </div>
+
+            </section>
 
         </main>
+
         <footer>
             <ul class="footer">
                 <div class="social">
                     <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com </li>
                     <li><i class="fab fa-facebook-f"></i> cuatropatassalud</li>
                     <li><i class="fab fa-whatsapp"></i> 11-5794-0605</li>
+                    <li><i class="fab fa-instagram"></i> @cuatropatassalud</li>
                 </div>
                 
                 <li>“cuidado y amor, tranquilidad y bienestar para tu mascota”</li>
@@ -52,5 +129,10 @@
         </footer>
         
     </div>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>
