@@ -99,6 +99,8 @@ main{
     height: auto;
 
 }
+
+/* planes */
 .carousel-inner{
     display: flex;
     padding-left: 400px;
@@ -121,6 +123,7 @@ main{
     padding-left: 80px;
     position: absolute;
     font-size: xx-large;
+    color: white;
 }
 
 .Title-plan-az{
@@ -128,7 +131,6 @@ main{
     padding-left: 60px;
     position: absolute;
     font-size: xx-large;
-    color: white;
 }
 
 .imagenIndex{
@@ -141,27 +143,40 @@ main{
     z-index: 1;
     padding-left: 30px;
 }
+.parteClub{
+    display: flex;
+}
 .club{
     color: white;
-    padding: 200px 0 10px 0;
+    padding: 200px 10px 20px 0;
     font-family:'Didact Gothic', sans-serif;
+
+}
+.club_dos{
+    color: #354d2e;
+    font-family:'Didact Gothic', sans-serif;
+    padding: 200px 0 0 0;
 }
 .buttonBeneficios{
-    font-family:'Didact Gothic', sans-serif;
-    background-color: rgba(255, 255, 255, 0.481);
-    font-size: 15px;
-    color: black;
-    width: 160px;
-    border-style: inset;
+
+    background-color: rgba(255, 255, 255, 0.74);
     padding: 0 10px 0 10px;
+    width: 210px;
+    border-style: inset;
     font-weight: bolder;
     cursor: pointer;
     border-radius: 10px;
-    text-decoration: none;
-
 }
+
+.buttonBeneficios a{
+    text-decoration: none;
+    color: black;
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 20px;
+}
+
 .buttonBeneficios:hover{
-    background-color:  rgba(158, 158, 158, 0.481);
+    background-color:  rgba(158, 158, 158, 0.658);
 }
 
 
@@ -196,17 +211,78 @@ main{
     margin: 0 35% 20px 35%;
 }
 
-/*section*/
-
+/*section 1*/
 section{
     grid-area: main;
     position: relative;
-    height: 800px;
+    height: auto;
 }
+
+#contenedorBeneficios{
+    text-align: center;
+    margin:100px 0 0 0 ;
+
+}
+.vr{
+
+    background-color: #628743;
+    width: 1px;
+}
+#contenedorBeneficios h2{
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 40px;
+    color: #ebc221;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+.beneficiosIconos{
+    display: flex;
+    justify-content: center;
+
+}
+.beneficiosIconos img{
+
+    padding: 0 50px 0 50px;
+}
+
+.beneficiosIconos p {
+    color: #ebc221;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 25px;
+}
+.containerButtonPlanes{
+    margin-top: 50px;
+}
+
+.buttonPlanes{
+    font-size: 20px;
+    font-family:'Didact Gothic', sans-serif;
+    padding: 0 10px 0 10px;
+    border-style: outset;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #628743;
+
+}
+
+.wave{
+position: relative;
+bottom: 0;
+
+padding-bottom: 0;
+overflow: hidden;
+display: block;
+}
+/* Section 2 */
 
 .imagenAndText{
     grid-area: main;
-    margin-top: 50px;
+    background-color: #ffde59;
+
 
 }
 
@@ -238,7 +314,7 @@ section{
 .tituloSection{
 
     font-size: 40px;
-    background-color: #b6d5eb;
+    /* background-color: #628743; */
     padding: 20px;
     font-style:oblique;
 }
@@ -246,7 +322,7 @@ section{
 .textNoso{
     padding: 0px 20px 50px 20px;
     font-size: 20px;
-    background-color: #b6d5ebc4;
+    /* background-color: #628743b0; */
 }
 .textNoso div {
     margin-top: 30px;
@@ -261,7 +337,7 @@ section{
     font-family:'Didact Gothic', sans-serif;
     padding: 0 10px 0 10px;
     border-style: outset;
-    background-color: #678092;
+    background-color: #628743;
     color: white;
     cursor: pointer;
     border-radius: 10px;
@@ -269,14 +345,14 @@ section{
 }
 
 .buttonIndex:hover{
-    background-color: #4d6372
+    background-color: #4e663b;
 }
 /* FOOTER */
 
 
 footer{
     grid-area: footer;
-    background-color: #ffde59;
+    background-color: #ebc221;
     height: auto;
 }
 .footer{
@@ -299,6 +375,15 @@ footer{
     justify-content: space-around;
 }
 
+.fa-instagram{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-facebook-f{
+    text-decoration: none;
+    color: black;
+}
 
 /* HEADER RESTO PAGINAS */
 .headerDif{
@@ -369,13 +454,17 @@ text-align: right;
 }
 
 /* SECTION AMIGOS */
+
+.main_refugios{
+    
+}
 .titulo_refugios{
     color: #507445;
     font-size: 80px;
     text-shadow: 4px 4px 5px black, 0 0 1em #93b688, 0 0 0.2em #93b688;
     letter-spacing: 15px;
     text-align: center;
-    margin: 20px;
+    margin-bottom: 50px;
 }
 
 .dif_refugios{
@@ -383,6 +472,7 @@ text-align: right;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #628743;
 }
 
 .refugios_contenedor{
@@ -401,11 +491,13 @@ figure{
 
 .nombre_refugio{
     margin-bottom: 30px;
-    color: white; 
-
-    background-color:#507445 ;
+    color:white ;
     border-top: 1px solid #507445; ;
     border-bottom: 1px solid #507445; 
+}
+.nombre_refugio h1{
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 25px;
 }
 
 .card_front{
@@ -472,4 +564,26 @@ figure div{
     position: absolute;
     top: 0;
     border-radius: 10px;
+}
+
+/*Form*/
+.sectionForm{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    justify-content: center;
+    border-color: black;
+}
+
+.formBox{
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.boton {
+    font-size: x-large;
 }
