@@ -78,7 +78,7 @@ header{
     margin-right: 20px;
     position: absolute;
     right: 0;
-    width: 40%;
+    width: 50%;
     height: 50%;
 
 }
@@ -87,7 +87,7 @@ header{
 .navList{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style-type: none;
     z-index: 3;
     align-items: center;
@@ -96,7 +96,7 @@ header{
 .navList li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 } 
 
 .navList li a:hover{
@@ -448,7 +448,7 @@ footer{
     height: 250px;
 }
 .navDif{
-    width: 45%;
+    width: 50%;
     margin-right: 20px;
     background-color: #5d8a4f;
 
@@ -468,7 +468,7 @@ footer{
 .navListDif li a{
 text-decoration: none;
 color: white;
-font-size: 20px;
+font-size: 17px;
 text-align: right;
 }
 
