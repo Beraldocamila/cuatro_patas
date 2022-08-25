@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Glass+Antiqua&display=swap" rel="stylesheet">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/d1563267ed.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&family=Fredoka:wght@300&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/d1563267ed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Cuatro Patas</title>
 </head>
 <body>
+    <a href="https://web.whatsapp.com/send?phone=5491157940605"><img class="whatsApp" src="./fotos/whatsapp.png" alt="whatsapp" width="70" height="70"></a>
     <div class="gridBody">
-        <header>
+        <header class="headerIndex">
             <div class="princContainer">
                 <div class="container">
                     <svg viewBox="0 0 500 500" 
@@ -96,7 +97,7 @@
                 <div class="buttonBeneficios"><a href="./index.html#contenedorBeneficios"> NUESTROS BENEFICIOS</a></div>
             </div>
             <section id="contenedorBeneficios">
-                <h2>Tendrán estos beneficios y muchos más</h2>
+                <div ><h2 data-aos="zoom-in">Tendrán estos beneficios y muchos más</h2></div>
                 <div class="beneficiosIconos">
                     <div>
                         <img src="./fotos/alimento.png" alt="alimento">
@@ -119,17 +120,15 @@
                     </div>
                 </div>
                 <div class="containerButtonPlanes"><a href="./html/planes.html" class="buttonPlanes"> NUESTROS PLANES </a> </div>
-                <svg fill="#ffde59"  x="-10px" y="-10px" viewBox="0 0 1900 50"  class=" wave" width="auto" height="83" >
-                    <path d="M1920,83.8V50.5C1727.1,33.7,1614.7,0,1341.7,0C932.5,0,883.3,64.9,384.9,64.9C215.3,64.9,97.6,58.7,0,50v33.8H1920z"></path>
-                    </svg>
+
 
 
             </section>
             <section class="imagenAndText">
                 <div class="divSection">
-                    <img class="sectionImg" src="./fotos/5.png" width="250px" height="500px">
                     <div class="textSection">
-                        <h1 class="tituloSection" >| ¿ Por qué 4 patas SALUD ? |</h1>
+                        <h1 class="tituloSection" >| ¿ Por qué cuatro patas SALUD ? |</h1>
+                        
                         <div class="textNoso">
                             
                             <div>Sabemos lo importante que es tu mascota para vos, por esa razón queremos ayudarte a cuidarla, brindándote un servicio integral para acompañarlos en cada etapa de su vida.</div>
@@ -140,7 +139,6 @@
                         <div class="containerButton"><a href="./html/contacto.html" class="buttonIndex"> CONTACTANOS </a> </div>
 
                     </div>
-                    <img class="sectionImg" src="./fotos/6.png" width="250px" height="500px">
 
                 </div>
                 <svg fill="#ebc221"  x="0px" y="0px" viewBox="0 0 1900 50"  class=" wave" width="auto" height="83" style="z-index:1;">
@@ -151,16 +149,19 @@
         </main>
 
         <footer>
-            <ul class="footer">
+            <div class="footer">
+                <p>“cuidado y amor, tranquilidad y bienestar para tu mascota”</p>
                 <div class="social">
-                    <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com </li>
+                    <h1>SEGUINOS EN</h1>
                     <li><i class="fab fa-facebook-f"></i> cuatropatassalud</li>
-                    <li><i class="fab fa-whatsapp"></i> 11-5794-0605</li>
-                    <li><i class="fab fa-instagram"></i> @cuatropatassalud</li>
+                    <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com </li>                    <li><i class="fab fa-instagram"></i> @cuatropatassalud</li>
                 </div>
-                
-                <li>“cuidado y amor, tranquilidad y bienestar para tu mascota”</li>
-            </ul>
+                <div>
+                    <h1>CONTACTO</h1>
+                    <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com </li>
+                    <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com </li>
+                </div>
+            </div>
         </footer>
         
     </div>
@@ -168,6 +169,5 @@
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </body>
 </html>

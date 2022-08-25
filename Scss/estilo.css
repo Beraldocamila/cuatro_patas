@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Glass Antiqua', cursive;
-
+    font-family: 'Fredoka', sans-serif;
 }
 
 .gridBody{
@@ -15,10 +14,19 @@
 }
 
 body{
-    background-image: url('../fotos/huellas1.png');
+    background-image: url('../fotos/huellas2.png');
     z-index: 0;
 }
 
+
+/* ICONO WHATSAPP */
+.whatsApp{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    margin: 0 20px 20px 0;
+}
 /* header */
 
 svg {
@@ -51,7 +59,6 @@ svg {
 
 header{
     grid-area: header;
-    height: 300px;
 }
 
 #logo{
@@ -59,6 +66,11 @@ header{
     z-index: 1;
     position: absolute;
     left: 200px;
+}
+
+.headerIndex{
+    height: 300px;
+
 }
 
 .navIndex{
@@ -101,6 +113,13 @@ main{
 }
 
 /* planes */
+
+/* .planesTop{
+    height: 500px;
+    background-image: url('../fotos/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 .carousel-inner{
     display: flex;
     padding-left: 400px;
@@ -133,6 +152,8 @@ main{
     font-size: xx-large;
 }
 
+
+/* MAIN */
 .imagenIndex{
     height: 500px;
     background-image: url('../fotos/3.png');
@@ -233,7 +254,7 @@ section{
     font-size: 40px;
     color: #ebc221;
     margin-bottom: 50px;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 .beneficiosIconos{
     display: flex;
@@ -253,7 +274,7 @@ section{
     font-size: 25px;
 }
 .containerButtonPlanes{
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
 }
 
 .buttonPlanes{
@@ -266,9 +287,11 @@ section{
     border-radius: 10px;
     text-decoration: none;
     background-color: #628743;
-
 }
 
+.buttonPlanes:hover{
+    background-color: #4b6735;
+}
 .wave{
 position: relative;
 bottom: 0;
@@ -281,8 +304,7 @@ display: block;
 
 .imagenAndText{
     grid-area: main;
-    background-color: #ffde59;
-
+background-color:#eee;
 
 }
 
@@ -320,12 +342,13 @@ display: block;
 }
 
 .textNoso{
-    padding: 0px 20px 50px 20px;
+
+    padding: 0px 25% 50px 25%;
     font-size: 20px;
     /* background-color: #628743b0; */
 }
 .textNoso div {
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -337,7 +360,7 @@ display: block;
     font-family:'Didact Gothic', sans-serif;
     padding: 0 10px 0 10px;
     border-style: outset;
-    background-color: #628743;
+    background-color: rgb(174, 172, 172);
     color: white;
     cursor: pointer;
     border-radius: 10px;
@@ -345,7 +368,7 @@ display: block;
 }
 
 .buttonIndex:hover{
-    background-color: #4e663b;
+    background-color: rgb(135, 134, 134);
 }
 /* FOOTER */
 
@@ -392,6 +415,7 @@ footer{
     justify-content: space-between;
     background-color: #507445;
     padding: 20px 0 20px 0;
+
 
 }
 
@@ -455,16 +479,13 @@ text-align: right;
 
 /* SECTION AMIGOS */
 
-.main_refugios{
-    
-}
 .titulo_refugios{
     color: #507445;
     font-size: 80px;
     text-shadow: 4px 4px 5px black, 0 0 1em #93b688, 0 0 0.2em #93b688;
     letter-spacing: 15px;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .dif_refugios{
@@ -498,6 +519,8 @@ figure{
 .nombre_refugio h1{
     font-family:'Didact Gothic', sans-serif;
     font-size: 25px;
+    font-weight: lighter;
+
 }
 
 .card_front{
@@ -548,8 +571,8 @@ figure div{
 
 .refugios_contenedor figure .card_back {
     transform: perspective(500px) rotateY(180deg);
-    background-color: #00c5cc3d;
-    box-shadow: 0px 15px 25px #00636693;
+    background-color: #ebc321c2;;
+    /* box-shadow: 0px 15px 25px #ebc32158; */
     position: absolute;
     top: 0;
     border-radius: 10px;
