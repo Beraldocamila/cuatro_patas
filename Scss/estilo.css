@@ -187,6 +187,7 @@ main{
     font-weight: bolder;
     cursor: pointer;
     border-radius: 10px;
+
 }
 
 .buttonBeneficios a{
@@ -205,19 +206,19 @@ main{
     font-size: 60px;
     margin-top: 50px;
     font-weight: lighter;
-    text-decoration: overline;
+    border-top: 2px solid #354d2e;
 }
 
 .tituloDos{
     font-size: 70px;
     letter-spacing: 20px;
     font-weight: lighter;
-    text-decoration: underline;
-    margin-bottom: 10px;
+    border-bottom: 2px solid #354d2e;
+    margin-bottom: 30px;
 }
 
 .titulos_index{
-
+    margin: 0 37vmax;
     text-align: center;
     color: #354d2e;
 
@@ -227,6 +228,8 @@ main{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 25px;
     font-weight: lighter;
+    text-align: center;
+
 
     color: #354d2e;
     margin: 0 35% 20px 35%;
@@ -243,6 +246,7 @@ section{
     text-align: center;
     margin:100px 0 0 0 ;
 
+
 }
 .vr{
 
@@ -253,7 +257,8 @@ section{
     font-family:'Didact Gothic', sans-serif;
     font-size: 40px;
     color: #ebc221;
-    margin-bottom: 50px;
+    margin: 50px 0;
+
     font-weight: bolder;
 }
 .beneficiosIconos{
@@ -274,7 +279,7 @@ section{
     font-size: 25px;
 }
 .containerButtonPlanes{
-    margin: 50px 0 50px 0;
+    margin: 50px 0 100px 0;
 }
 
 .buttonPlanes{
@@ -295,7 +300,6 @@ section{
 .wave{
 position: relative;
 bottom: 0;
-
 padding-bottom: 0;
 overflow: hidden;
 display: block;
@@ -375,39 +379,81 @@ background-color:#eee;
 
 footer{
     grid-area: footer;
-    background-color: #ebc221;
+    background-color: #ffde59;
     height: auto;
 }
 .footer{
-    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
     font-size: 20px;
     list-style-type: none;
-    margin: 0 50px;
-    
+    color: black;
 
 }
 
-.social{
-    height: auto;
+.tituloFooter{
+    color: #354d2e;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.navegacion{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
-
-.fa-instagram{
+.navegacion p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.navegacion p a{
     text-decoration: none;
     color: black;
 }
 
-.fa-facebook-f{
-    text-decoration: none;
-    color: black;
+.redes_contacto{
+    display: flex;
+    flex-direction: column;
+    
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
+.redes div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.fa-instagram, .fa-facebook-f{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.845);
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contacto ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.fa-envelope, .fa-whatsapp{
+    margin-right: 10px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.845);
+
+}
+
+.imagenFooter{
+text-align: center;
+position: relative;
+bottom: 20px;
+}
 /* HEADER RESTO PAGINAS */
 .headerDif{
     display: flex;
@@ -415,18 +461,17 @@ footer{
     justify-content: space-between;
     background-color: #507445;
     padding: 20px 0 20px 0;
-
+    height: 70px;
 
 }
 
 .titulosDif{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 30px;
     text-align: center;
     border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    height: auto;
+
 }
 .titulosDif a{
     text-decoration: none;
@@ -442,16 +487,13 @@ footer{
     letter-spacing: 20px;
     font-weight: lighter;
     padding-left: 20px;
+    border-bottom: 2px solid white;
 }
-.logoDif{
-    width: 350px;
-    height: 250px;
-}
+
 .navDif{
     width: 50%;
     margin-right: 20px;
     background-color: #5d8a4f;
-
     align-self: center;
 }
 .navListDif{
@@ -493,7 +535,7 @@ text-align: right;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #628743;
+
 }
 
 .refugios_contenedor{
@@ -529,7 +571,7 @@ figure{
     width: 400px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0px 15px 25px #507445;
+    box-shadow: 0px 15px 25px  rgb(135, 134, 134);
 }
 
 .card_back{
@@ -571,7 +613,7 @@ figure div{
 
 .refugios_contenedor figure .card_back {
     transform: perspective(500px) rotateY(180deg);
-    background-color: #ebc321c2;;
+    background-color:  rgb(135, 134, 134);
     /* box-shadow: 0px 15px 25px #ebc32158; */
     position: absolute;
     top: 0;
@@ -609,4 +651,32 @@ figure div{
 
 .boton {
     font-size: x-large;
+}
+
+/* PREGUNTAS FRECUENTES */
+.main_preguntas{
+background-color: rgb(195, 195, 195);
+}
+.containerPreguntas{
+height: 600px;
+text-align: center;
+
+}
+.preguntaIndividual{
+    margin: 100px 20% 0 20%;
+
+}
+
+.pregunta{
+    height: 80px;
+    background-color: #5d8a4f;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px;
+
+}
+.respuesta{
+    height: 80px;
+    background-color: #628743b1;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px;
 }
