@@ -810,6 +810,7 @@ margin-bottom: 100px;
     margin: 50px 30% 100px 30%;
     background-color:#628743;
     height: 1px;
+    border: #628743;
 
 }
 .masPreguntas{
@@ -856,10 +857,9 @@ box-shadow: 0px 0px 15px #628743ae;
 
 .btnVerMas, .btnVerMas_2{
     cursor: pointer;
-
-    background-color: #dbdbdb;
+    background-color: #7ba954;
     font-weight: 700;
-    color: #628743;
+    color: #354d2e;
     box-shadow: 0px 0px 15px #628743ae;
     font-size: 20px;
     padding: 5px;
@@ -868,8 +868,8 @@ box-shadow: 0px 0px 15px #628743ae;
     margin: 50px 43% 0 43%;
 }
 .btnVerMas:hover, .btnVerMas_2:hover{
-        background-color: rgba(203, 203, 203, 0.521);
-        color: #628743bb;
+        background-color: #628743;
+        color: white;
 }
 
 /* BASES Y CONDICIONES */
@@ -905,11 +905,15 @@ align-items: center;
     padding: 50px 0;
 }
 
-.main_byc p{
+.main_byc p, .main_byc ol{
     padding: 0 30px;
 
 }
 
+ol li{
+    list-style-position: inside;
+    list-style-type: decimal;
+}
 
 /*Media Query*/
 @media screen and (max-width: 1025px) {
