@@ -898,6 +898,13 @@ align-items: center;
 }
 .main_byc{
     background-color: #dbdbdb;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+    line-height: 1.5;
+
 }
 .tituloMain_ByC{
     text-align: center;
@@ -905,14 +912,41 @@ align-items: center;
     padding: 50px 0;
 }
 
-.main_byc p, .main_byc ol{
-    padding: 0 30px;
+.main_byc h1, .main_byc p, .main_byc ol li, .main_byc h3{
+    padding-bottom: 20px;
 
 }
 
 ol li{
     list-style-position: inside;
     list-style-type: decimal;
+}
+
+.byc_planes{
+    padding-left: 30px;
+
+}
+.byc_planes li{
+    list-style: circle;
+}
+
+.byc_subtitulo{
+    text-decoration: underline;
+}
+.volver{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+;
+
+}
+.volver a{
+    text-decoration: none;
+    color: #354d2e;
+}
+
+.volver a:hover{
+font-weight: bolder;
 }
 
 /*Media Query*/
