@@ -30,7 +30,8 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: #ffde59;
+    /* background-color: #ffde59; */
+    background-color: #628743;
     height: auto;
 }
 
@@ -334,12 +335,13 @@ background-color:#EDEDED;
 /* PLANES */
 
 .imagenPlan{
-    background-image: url('../fotos/image.png');
+    background-image: url('../fotos/4.png');
     height: 500px;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
+
 
 }
 .tituloPlan{
@@ -347,7 +349,9 @@ background-color:#EDEDED;
     padding: 100px 25% 0 25%;
     font-family:'Fredoka One', cursive;
     font-size: 40px;
-    color:white;
+    /* color:white; */
+    color: #ebc221;
+
 }
 
 
@@ -363,6 +367,7 @@ background-color:#EDEDED;
     background-image: url('../fotos/fondoPlan.png');
     /* background-size: cover;
     background-color: #9bc775; */
+
 }
 .containerWave{
     display: inline-block;
@@ -383,14 +388,14 @@ z-index: 1;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .table_planes{
     display: inline-table;
     border-collapse: separate;
     border-spacing: 0;
-    filter: drop-shadow(8px 8px 20px #628743);
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.564));
 }
 
 .concepto{
@@ -405,13 +410,13 @@ z-index: 1;
 
 .table_planes .conceptos_coberturas tr td, .cobertura{
     border: 1px solid rgba(0, 0, 0, 0.33);
-    background-color: #eee;
+    background-color: #fafafa;
 }
 
 .diamante, .esmeralda, .agata{
     height: 100px;
     width: 250px;
-    color: white;
+    color: #ffffff;
     font-family: 'Fredoka One', cursive;
     letter-spacing: 5px;
 }
@@ -474,12 +479,12 @@ z-index: 1;
     padding-top: 30px;
     font-size: 20px;
     list-style-type: none;
-    color: black;
+    color: white;
 
 }
 
 .tituloFooter{
-    color: #354d2e;
+    color: white;
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -494,7 +499,7 @@ z-index: 1;
 }
 .navegacion p a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .redes_contacto{
@@ -517,7 +522,8 @@ z-index: 1;
 
 .fa-instagram, .fa-facebook-f{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.845);
+    /* color: rgba(0, 0, 0, 0.845); */
+    color: white;  
     margin-right: 20px;
     font-size: 25px;
 }
@@ -530,7 +536,8 @@ z-index: 1;
 .fa-envelope, .fa-whatsapp{
     margin-right: 10px;
     font-size: 25px;
-    color: rgba(0, 0, 0, 0.845);
+    /* color: rgba(0, 0, 0, 0.845); */
+    color:white;
 
 }
 
@@ -607,16 +614,23 @@ text-align: right;
 }
 
 /* AMIGOS */
-
-.titulo_refugios{
-    color: #507445;
-    font-size: 80px;
-    text-shadow: 4px 4px 5px black, 0 0 1em #93b688, 0 0 0.2em #93b688;
-    letter-spacing: 15px;
+.fotosAmigos{
+    display: flex;
+    overflow: hidden;
+}
+.adopta{
+    font-size: 40px;
+    position: relative;
     text-align: center;
-    margin: 50px 0;
+    bottom: 70px;
+    /* font-family: 'Fredoka One', cursive; */
+    background-color: rgba(255, 255, 255, 0.648);
+    margin: 0 20%;
 }
 
+.main_refugios{
+    background-image: url('../fotos/fondoAmigos.png');
+}
 .dif_refugios{
     display: flex;
     flex-direction: row;
@@ -638,35 +652,24 @@ figure{
     position: relative;
 }
 
-.nombre_refugio{
-    margin-bottom: 30px;
-    color:white ;
-    border-top: 1px solid #507445; ;
-    border-bottom: 1px solid #507445; 
-}
-.nombre_refugio h1{
-    font-family:'Didact Gothic', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-
-}
-
 .card_front{
     position:relative;
     height: 200px;
     width: 300px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0px 15px 25px  rgb(135, 134, 134);
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.564));
 }
 
 .card_back{
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.564));
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
-    font-size: 18px;
+    font-size: 16px;
     z-index: 1;
+    text-align: center;
 }
 .card_back p{
     font-family:'Didact Gothic', sans-serif;
@@ -699,8 +702,10 @@ figure div{
 
 .refugios_contenedor figure .card_back {
     transform: perspective(500px) rotateY(180deg);
-    background-color:  rgb(135, 134, 134);
+    /* background-color:  rgb(135, 134, 134); */
     /* box-shadow: 0px 15px 25px #ebc32158; */
+    background-color: #ffe65d;
+
     position: absolute;
     top: 0;
     border-radius: 10px;
@@ -755,12 +760,13 @@ margin-bottom: 100px;
 
 .preguntaIndividual{
     margin: 15px 20%;
-    filter: drop-shadow(4px 4px 10px #628743);
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.564));
 
 }
 
 .pregunta{
-    background-color: #4b6735 ;
+    /* background-color: #4b6735 ; */
+    background-color: #fad026;
     color: #EDEDED ;
     font-family: 'Fredoka', sans-serif;
     padding: 15px 0px;
@@ -774,8 +780,8 @@ margin-bottom: 100px;
     text-align: left;
 }
 
-.pregunta:hover, .bi-chevron-down:hover, .bi-chevron-up:hover{
-    background-color: #425b2f ;
+.pregunta:hover{
+    background-color: #c5a012 ;
 }
 
 .respuesta{
@@ -858,18 +864,18 @@ box-shadow: 0px 0px 15px #628743ae;
 .btnVerMas, .btnVerMas_2{
     cursor: pointer;
     background-color: #7ba954;
-    font-weight: 700;
     color: #354d2e;
-    box-shadow: 0px 0px 15px #628743ae;
+    /* box-shadow: 0px 0px 15px #628743ae; */
     font-size: 20px;
     padding: 5px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid #628743;
     margin: 50px 43% 0 43%;
 }
 .btnVerMas:hover, .btnVerMas_2:hover{
-        background-color: #628743;
+        /* background-color: #628743; */
         color: white;
+        /* font-weight: 1000; */
 }
 
 /* BASES Y CONDICIONES */
