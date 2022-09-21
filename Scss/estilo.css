@@ -14,7 +14,7 @@
 }
 
 .bodyIndex{
-    background-image: url('../fotos/huellas2.png');
+    background-image: url('../fotos/fondo.png');
     z-index: 0;
 }
 
@@ -364,7 +364,7 @@ background-color:#EDEDED;
     padding-top:420px;
 }
 .bodyPlanes{
-    background-image: url('../fotos/fondoPlan.png');
+    background-image: url('../fotos/fondo.png');
     /* background-size: cover;
     background-color: #9bc775; */
 
@@ -629,7 +629,7 @@ text-align: right;
 }
 
 .main_refugios{
-    background-image: url('../fotos/fondoAmigos.png');
+    background-image: url('../fotos/fondo.png');
 }
 .dif_refugios{
     display: flex;
@@ -748,7 +748,7 @@ figure div{
 
 .main_preguntas{
 /* background-color: #EDEDED; */
-background-image: url('../fotos/fondoPreg.png');
+background-image: url('../fotos/fondo.png');
 
 }
 .containerPreguntas{
