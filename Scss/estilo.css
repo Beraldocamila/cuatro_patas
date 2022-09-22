@@ -349,8 +349,8 @@ background-color:#EDEDED;
     padding: 100px 25% 0 25%;
     font-family:'Fredoka One', cursive;
     font-size: 40px;
-    /* color:white; */
-    color: #ebc221;
+    color:#628743;
+    /* color: #ebc221; */
 
 }
 
@@ -419,14 +419,24 @@ z-index: 1;
     color: #ffffff;
     font-family: 'Fredoka One', cursive;
     letter-spacing: 5px;
-}
-.diamante{
-    background-color: #a8af9e;
-    border-top-left-radius: 10px;
 
 }
+.diamante p, .esmeralda p , .agata p {
+    font-family: 'Fredoka One', cursive;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 1.5;
+
+
+}
+
+.diamante{
+    background-color: #aaaf9e;
+    border-top-left-radius: 10px;
+}
+
 .esmeralda{
-    background-color: #00a776;
+    background-color: #0feaac;
 }
 .agata{
     background-color: #140a00;
@@ -440,17 +450,25 @@ z-index: 1;
 .valor_diamante, .valor_esmeralda, .valor_agata{
     border: 1px solid rgba(0, 0, 0, 0.33);
     height: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    background-color: #efefef;
+
+
 }
 
 .valor_agata{
-    background-color: #140a00;
+    /* background-color: #140a00; */
     border-bottom-right-radius: 10px;
+    color: #140a00;
 }
 .valor_esmeralda{
-    background-color: #00a776;
+    /* background-color: ; */
+    color: #0feaac;
 }
 .valor_diamante{
-    background-color: #a8af9e;
+    /* background-color: #d1d5cc; */
+    color:#aaaf9e ;
     border-bottom-left-radius: 10px;
 }
 
@@ -622,12 +640,23 @@ text-align: right;
     font-size: 40px;
     position: relative;
     text-align: center;
-    bottom: 70px;
+    bottom: 50px;
     /* font-family: 'Fredoka One', cursive; */
     background-color: rgba(255, 255, 255, 0.648);
     margin: 0 20%;
+    padding-bottom: 0;
 }
+.adoption{
+    padding: 0 400px;
+    /* background-color: #ffde59; */
+}
+.adoption p{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
 
+}
 .main_refugios{
     background-image: url('../fotos/fondo.png');
 }
