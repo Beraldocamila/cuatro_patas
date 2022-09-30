@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&family=Fredoka:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d1563267ed.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Cuatro Patas</title>
 </head>
 <body class="bodyPlanes">
@@ -30,7 +32,10 @@
             </div>
 
             <div class="headerDif">
-                <div class="titulosDif"><a href="../index.html"><h1 class="tituloUnoDif">Cuatro Patas Salud</h1></a></div>
+                <!-- <div class="titulosDif"><a href="../index.html"><h1 class="tituloUnoDif">Cuatro Patas Salud</h1></a></div> -->
+                <div class="logo_Dif">
+                    <a href="../index.html"><img src="../fotos/logoIndex.png" alt="logo_solo" width="130" height="130"></a>
+                </div>
                 <nav class="navDif">
                     <ul class="navListDif">
                         <!-- <li><a href="./quienes_somos.html">Quienes Somos</a></li>
@@ -58,115 +63,122 @@
                 </svg>
             </div>
 
-            <h1 class="tituloPlan">¿CUÁL ES EL MEJOR PLAN PARA TU MASCOTA?</h1>
+            <h1 class="tituloPlan " data-aos="zoom-in">¿CUAL ES EL MEJOR PLAN PARA TU MASCOTA?</h1>
 
             <section>
 
                 <table class="table_planes">
                     <thead>
                         <tr class="filaPlanes">
-                            <th></th>
+
+                            <th class="plan_cobert">
+                                <p class="planes">PLANES</p>
+                                <svg class="diagonal" viewBox="0 0 10 10" preserveAspectRatio="none">
+                                    <line x1="0" y1="0.3" x2="10" y2="10" stroke="black" stroke-width="0.1" />
+                                </svg>
+                                <p class="practicas">PRACTICAS</p>
+                            </th>
                             <th class="diamante"><p> PLAN DIAMANTE</p></th>
                             <th class="esmeralda"><p> PLAN ESMERALDA</p></th>
                             <th class="agata"> <p> PLAN AGATA</p></th>
                         </tr>
-                        <tr>
-                            <th></th>
-                            <th class="cobertura">Cobertura</th>
-                            <th class="cobertura">Cobertura</th>
-                            <th class="cobertura">Cobertura</th>
-                        </tr>
+                        <!-- <tr>
+                            <th class="cobert"></th>
+                            <th class="cobertura">COBERTURA</th>
+                            <th class="cobertura">COBERTURA</th>
+                            <th class="cobertura">COBERTURA</th>
+                        </tr> -->
                     </thead>
                     <tbody class="conceptos_coberturas">
                         <tr>
                             <td class="concepto">ATENCIÓN CLÍNICA (DIURNA)</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">ATENCIÓN CLÍNICA (NOCTURNA)</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">CERTIFICADO DE SALUD</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">VACUNAS</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">CORTE DE UÑAS Y LIMPIEZA DE OIDO<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">LABORATORIO<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">ECOGRAFÍA<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">RADIOGRAFÍA<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">ELECTROCARDIOGRAMA<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">FARMACIA Y ACCESORIOS<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">ALIMENTOS<strong>*</strong></td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#8a917a;">&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">MICROCHIP<strong>*</strong></td>
                             <td>-</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">CASTRACIÓN<strong>*</strong></td>
                             <td>-</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
                             <td class="concepto">COPROPARASITOLÓGICO (DESPARASITARIO)<strong>*</strong></td>
                             <td>-</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                         <tr>
-                            <td class="concepto">BAÑOS Y PELUQUERIA<strong>*</strong></td>
+                            <td class="concepto bordetabla">BAÑOS Y PELUQUERIA<strong>*</strong></td>
                             <td>-</td>
-                            <td>&#10004</td>
-                            <td>&#10004</td>
+                            <td style="color:#0cbb8a;">&#10004</td>
+                            <td style="color:#140a00;">&#10004</td>
                         </tr>
                     </tbody>
                         <tr >
@@ -177,6 +189,8 @@
                         </tr>
 
                 </table>
+
+                
             </section>
             <div class="reintegro">
                 <span style="font-size: 25px;"> <strong>*</strong> </span> <span>Reintegro según plan seleccionado.</span>
@@ -191,7 +205,7 @@
             <div class="footer">
 
                 <div class="navegacion">
-                    <h1 class="tituloFooter">NAVEGACIÓN</h1>
+                    <h1 class="tituloFooter">NAVEGACION</h1>
                     <p><a href="planes.html">Nuestros Planes</a> </p>
                     <p><a href="preguntas.html">Preguntas Frecuentes</a> </p>
                     <p><a href="bases_condiciones.html">Términos y Condiciones</a> </p>
@@ -205,10 +219,10 @@
                     </div>
                 </div>
                 <div class="contacto">
-                    <h1 class="tituloFooter">CONTÁCTANOS</h1>
+                    <h1 class="tituloFooter">CONTACTANOS</h1>
                     <ul>
                         <li><i class="far fa-envelope"></i>cuatropatassalud@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> 11-5794-0605</li> 
+                        <li><i class="fab fa-whatsapp"></i> (011)-15-5794-0605</li> 
                         
                     </ul>
 
@@ -228,5 +242,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
