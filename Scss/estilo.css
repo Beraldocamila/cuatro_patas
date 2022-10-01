@@ -253,11 +253,10 @@ section{
 #contenedorBeneficios{
     text-align: center;
 }
-.vr{
-
-    background-color: #628743;
-    width: 1px;
+.borde-right{
+    border-right: 1px solid #628743;
 }
+
 #contenedorBeneficios h2{
     /* font-family:'Didact Gothic', sans-serif; */
     font-size: 40px;
@@ -388,7 +387,7 @@ justify-content: space-evenly;
 }
 .tituloPlan{
     text-align: center;
-    padding: 100px 20% 50px 20%;
+    padding: 100px 0 50px 0;
     font-family:'Fredoka One', cursive;
     font-size: 40px;
     color:#354d2e ;
@@ -443,6 +442,7 @@ z-index: 1;
 .plan_cobert{
     border-left: 1px solid rgba(0, 0, 0, 0.33);
     border-top: 1px solid rgba(0, 0, 0, 0.33);
+    
     background-color: #d2d5cd;
     border-top-left-radius:10px ;
     position: relative;
@@ -490,9 +490,13 @@ z-index: 1;
 }
 
 .table_planes .conceptos_coberturas tr td, .cobertura{
-    border: 1px solid rgba(0, 0, 0, 0.33);
+    border-left: 1px solid rgba(0, 0, 0, 0.20);
+    border-right: 1px solid rgba(0, 0, 0, 0.20);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
     background-color: #fafafa;
 }
+
 
 .diamante, .esmeralda, .agata{
     height: 100px;
@@ -504,8 +508,8 @@ z-index: 1;
 }
 .diamante p, .esmeralda p , .agata p {
     font-family: 'Fredoka One', cursive;
-    padding: 0 40px;
-    font-size: 20px;
+    padding: 0 30px;
+    font-size: 25px;
     line-height: 1.5;
 
 
@@ -529,15 +533,21 @@ z-index: 1;
     border-bottom: none;
 }
 .valor_diamante, .valor_esmeralda, .valor_agata{
-    border: 1px solid rgba(0, 0, 0, 0.33);
+    /* border: 1px solid rgba(0, 0, 0, 0.33); */
     height: 50px;
-    font-family: 'Fredoka One', cursive;
-    font-size: 35px;
     background-color: #efefef;
-
-
+    text-align: right;
 }
 
+.valor{
+    font-family: 'Fredoka One', cursive;
+    font-size: 35px;
+}
+
+.por_mes{
+    font-family: 'Fredoka', sans-serif;
+
+}
 .valor_agata{
     background-color: #140a00;
     border-bottom-right-radius: 10px;
@@ -545,6 +555,7 @@ z-index: 1;
     color: white;
 }
 .valor_esmeralda{
+
     background-color:#0cbb8a ;
     /* color: #0cbb8a; */
     color: white;
