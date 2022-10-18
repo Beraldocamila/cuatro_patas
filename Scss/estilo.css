@@ -743,23 +743,37 @@ text-align: right;
     text-align: center;
     bottom: 48px;
     color: #354d2ed1;
-    
     font-family: 'Fredoka One', cursive;
     background-color: white;
     margin: 0 20%;
     padding-bottom: 0;
 }
 .adoption{
-    padding: 0 400px;
+    /* padding: 0 400px; */
     /* background-color: #ffde59; */
+    /* border: 1px solid rgba(0, 0, 0, 0.241);*/
+    margin: 0 25%;
+    /* filter: drop-shadow(0px 0px 2px #ffe75d47); */
+
 }
 .adoption p{
     text-align: center;
     font-family: 'Fredoka', sans-serif;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+}
+.adoption .textoAmigos{
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    padding: 10px 0;
+}
+
+.adoption .parrafoUno{
+    font-size: 25px;
 
 }
+
 .main_refugios{
     background-image: url('../fotos/fondo.png');
 }
