@@ -32,7 +32,7 @@ index.html: página principal del sitio.
 
 scss/estilo.css: hoja de estilos para el diseño del sitio.
 
-js/app.js: archivo de JavaScript para efectos y validación de formularios.
+js/script.js: archivo de JavaScript para efectos y validación de formularios.
 
 fotos/: carpeta con imágenes utilizadas en el sitio.
 
